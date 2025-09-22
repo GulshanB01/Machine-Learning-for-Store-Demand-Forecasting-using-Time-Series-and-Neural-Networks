@@ -13,39 +13,28 @@ Source: Store Item Demand Forecasting Challenge dataset (Kaggle)
 Attributes:
 
 Date: Sales record date
-
 Store ID: Store identifier
-
 Item ID: Item identifier
-
 Sales: Units sold
-
 Data Span: Jan 1, 2013 – Dec 31, 2017, across 10 stores and 50 items
 
 🛠️ Data Preprocessing:
 
 Checked and removed duplicates
-
 Standardized date format
-
 Verified absence of null values
-
 Noted weak correlations with sales but retained all features
-
 Chronologically split data into 75% train / 25% test
 
 🚀 Methodology:
 
 Model Selection:
-
 Time-Series Models: LSTM, BiLSTM, ARIMA, LSTM+CNN Hybrid, BiLSTM+CNN Hybrid
-
 Baseline Regression Models: Random Forest Regressor, XGBoost Regressor, ANN, CNN
 
 Data Transformation:
 
 Label encoding for Store ID and Item ID
-
 Converted DATE to discrete ordinal values
 
 Tools & Technologies:
@@ -56,9 +45,7 @@ Python, Pandas, Numpy, Scikit-learn, Keras, TensorFlow, Matplotlib
 Hybrid Model Architecture:
 
 LSTM+CNN: CNN extracts spatial features, LSTM captures temporal patterns, followed by dense layers to refine features and combine outputs for prediction.
-
 BiLSTM+CNN: Similar to LSTM+CNN but LSTM layers use bidirectional wrapping for enhanced temporal context.
-
 Models trained with batch size = 256 and manually fine-tuned hyperparameters.
 
 Evaluation Metrics:
